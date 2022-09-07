@@ -1,0 +1,226 @@
+
+body
+{
+ margin:0px auto;
+ padding:10px;
+ text-align:center;
+ width:100%;
+ font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+ background-color:white;
+ background-image: url("https://evisionthemes.com/wp-content/uploads/2020/12/pattern1-min.png");
+}
+header
+{
+ width:100%;
+ margin:0px auto;
+ padding:0px;
+ text-align:right;
+ height:70px;
+ line-height:70px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #38444d;
+}
+li {
+  float: center;
+  display: inline;
+  float: center;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #207862;
+}
+
+li.dropdown {
+  display: inline-block;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: ##03fc9d;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align:center;
+}
+
+.dropdown-content a:hover {background-color: #03fcb6;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+img.transparent {
+  color: #222;
+  background: hsl(0,0%,90%)
+  url("chrome://global/skin/media/imagedoc-lightnoise.png");
+}
+.shrinkToFit {
+  cursor: zoom-in;
+}
+.limit{
+    width:auto;
+    word-wrap: break-word;
+}
+#home
+{
+ margin-top:auto;
+ width:85%;
+ height:auto;
+ text-align: left;
+ margin-left:5%;
+ padding:auto;
+ color:black;
+}
+#about
+{
+ margin-top:1%;
+ width:75%;
+ height:auto;
+ text-align: justify;
+ margin-left:5%;
+ padding:auto;
+ color:black;
+}
+#viz
+{
+ margin-top:auto;
+ width:85%;
+ height:auto;
+ text-align: left;
+ margin-left:5%;
+ padding:auto;
+ color:black;
+}
+#details
+{
+ margin-top:auto;
+ width:85%;
+ height:auto;
+ align-content: right;
+ text-align: justify;
+ margin-left:5%;
+ padding:10px;
+ color:black;
+}
+#credits
+{
+ margin-top:auto;
+ width:85%;
+ height:auto;
+ text-align: left;
+ margin-left:5%;
+ padding:auto;
+ color:black;
+}
+#svg1
+{
+ margin-top:auto;
+ width:85%;
+ height:auto;
+ text-align: justify;
+ margin-left:5%;
+ padding:auto;
+ color:black;
+}
+#svg2
+{
+ margin-top:auto;
+ width:85%;
+ height:auto;
+ text-align: justify;
+ margin-left:5%;
+ padding:auto;
+ color:black;
+ circle {
+   cursor: pointer;
+  }
+}
+.active {
+  fill:orange;
+  stroke:black;
+}
+.inactive {
+  fill:grey;
+  stroke:blue;
+}
+#home h1
+{
+ font-size:40px;
+}
+#home p
+{
+ font-size:20px;
+}
+#about p
+{
+ font-size:20px;
+}
+.svg-wrapper {
+  height: 60px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 320px;
+}
+
+.shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 80px;
+  stroke: #34eb40;
+}
+
+.text {
+  color: black;
+  font-family: 'Roboto Condensed';
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  position: relative;
+  top: -48px;
+  text-align: justify;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 20px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 20px;
+  }
+}
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+
+
+
