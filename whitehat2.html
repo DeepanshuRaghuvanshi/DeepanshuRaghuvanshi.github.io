@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title> HW2 </title>
+<style type="text/css">
+    .state{
+      fill: #e3e3e3;
+      stroke: #333;
+      stroke-width:  0.7;
+    }
+
+    .county{
+      fill: #e3e3e3;
+      stroke: #fff;
+      stroke-width:  0.5;
+    }
+
+  </style>
+</head>
+<body>
+<div id="header">
+  <h1>CS529 : Visual Data Science </h1>
+</div>
+<div class="navbar">
+  <ul>
+    <li><a href="home.html">HOME</a></li>
+    <li><a href="abouthw2.html">ABOUT HW02</a></li>
+    <li><a href="blackhat.html">BLACKHAT</a></li>
+    <li><a href="whitehat.html">WHITEHAT</a></li>   
+  </ul>
+</div>
+<code><script src="https://d3js.org/d3.v5.min.js"></script></code>
+  <script src="https://unpkg.com/topojson@3"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+  <div class="container" id="usmap">
+    <h1>White Hat Visualization</h1>
+    <h3>In-depth analysis of the casualities by gun violence</h3>
+    <button type="button" onclick="males()">Male Deaths By State</button>
+    <button type="button" onclick="females()">Female Deaths By State</button>
+    <button type="button" hidden=""></button>
+    <button type="button" onclick="location.href='whitehat1.html'">Back..</button>
+    <div id="map"></div>
+  
+    <svg id="map" style=" width: 1000; height: 1000; " margin-left="100px"> </svg>
+     </div>   
+  </div>
+    
+    
+  <script src="viz2.js"></script>
+  <div id="div_template"></div>
+</body>
+</html>
