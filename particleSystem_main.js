@@ -68,11 +68,7 @@ slider.add(settings, 'range', bounds.minY-0.5, bounds.maxY+0.5).onChange(functio
         scene.remove(draw2DPlane)
         scene.remove(plane)
         draw2DPlane(settings.range)
-        //changeColors(0,settings.range)
         plot2D(settings.range)
-        //dot2 = slice(data,0)
-        //scene.add(dot2)
-    
 });
 
 // function to plot points in 2D plane
